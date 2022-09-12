@@ -12,7 +12,7 @@ mongoose.connect(process.env.DATABASE_URL);
 
 //MIDLEWARE
 app.use(express.urlencoded({extended: false }));
-// app.use(methodOverride('_method'));
+app.use(methodOverride('_method'));
 // app.use('/players', playersController);
 
 

@@ -21,5 +21,16 @@
               </ul>
             </nav>
      </header>
+
+<main>
+  <h2>List of Authors</h2>
+  <ul>
+      <% for(let i = 0; i < players.length; i++){ %>
+      <li>
+          <a href="/players/<%= players[i]._id %>"><%= players[i].name %></a>
+      </li>
+      <% } %>
+  </ul>
+</main>
 </body>
 </html>

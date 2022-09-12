@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const playerSchema = new Schema({
-  name: String 
-}, {
-  timestamps: true
+  name: String,
+  rank: Number,
+  players:[]
 });
 
 const Player = mongoose.model('Player', playerSchema);

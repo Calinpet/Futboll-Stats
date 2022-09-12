@@ -30,3 +30,11 @@ router.post('/', (req,res)=>{
 //EDIT
 
 //SHOW
+
+router.get('/:id', (req, res) => {
+  Author.findById(req.params.id, (err, foundPlayer) => {
+      res.render('players/show.ejs', {
+        author: foundPlayer
+    });
+  });
+});
