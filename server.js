@@ -12,6 +12,15 @@ mongoose.connect(process.env.DATABASE_URL, {
 	useUnifiedTopology: true
 });
 
+//MIDLEWARE
+
+app.get('/', (req, res)=>{
+  res.render('index.ejs')
+})
+// Database Connection Error / Success
+
+
+
 // Listener
 const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`server is listening on port: ${PORT}`));
