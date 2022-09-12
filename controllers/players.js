@@ -16,6 +16,11 @@ router.get('/', (req,res)=>{
 //NEW
 
 //DELETE
+router.delete('/:id', (req, res)=>{
+  Player.findByIdAndRemove(req.params.id, ()=>{
+      res.redirect('/players');
+  });
+});
 
 //UPDATE
 
