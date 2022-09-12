@@ -5,6 +5,14 @@ const Player = require('../models/players.js');
 
 //INDEX
 
+router.get('/', (req,res)=>{
+  Player.find({}, (err, foundPlayers)=>{
+    res.render('players/index.ejs', {
+      players: foundPlayers
+    })
+  })
+})
+
 //NEW
 
 //DELETE
