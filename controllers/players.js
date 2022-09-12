@@ -14,6 +14,7 @@ router.get('/', (req,res)=>{
 })
 
 //NEW
+
 router.get('/new', (req, res)=>{
   res.render('players/new.ejs')
 })
@@ -26,6 +27,12 @@ router.delete('/:id', (req, res)=>{
 });
 
 //UPDATE
+
+router.put('/:id', (req, res)=>{
+  Player.findByIdAndUpdate(req.params.id, req.body, ()=>{
+    res.redirect('/players')
+  })
+})
 
 //CREATE
 
