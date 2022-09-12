@@ -14,6 +14,9 @@ router.get('/', (req,res)=>{
 })
 
 //NEW
+router.get('/new', (req, res)=>{
+  res.render('players/new.ejs')
+})
 
 //DELETE
 router.delete('/:id', (req, res)=>{
