@@ -1,0 +1,31 @@
+{
+  "name": "futboll-stats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Calinpet/Futboll-Stats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Calinpet/Futboll-Stats/issues"
+  },
+  "homepage": "https://github.com/Calinpet/Futboll-Stats#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "install": "^0.13.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.6.0",
+    "nodemon": "^2.0.19",
+    "npm": "^8.19.1"
+  }
+}
