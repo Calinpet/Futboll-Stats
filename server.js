@@ -1,7 +1,7 @@
 //DEPENDENCIES
 const express = require('express');
 const app = express();
-const playersController = require('./controllers/players.js');
+const teamsController = require('./controllers/teams.js');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 
@@ -13,7 +13,7 @@ mongoose.connect(process.env.DATABASE_URL);
 //MIDLEWARE
 app.use(express.urlencoded({extended: false }));
 app.use(methodOverride('_method'));
-// app.use('/players', playersController);
+app.use('/teams', teamsController);
 
 
 app.get('/', (req, res)=>{

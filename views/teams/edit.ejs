@@ -8,24 +8,23 @@
 </head>
 <body>
     <header>
-       <h1>Edit <%= player.name %>'s Info</h1>
+       <h1>Edit <%= team.name %>'s Info</h1>
          <nav>
             <ul>
                <li>
                   <a href="/">Home</a>
                </li>
                <li>
-                  <a href="/players">Players Index</a>
+                  <a href="/teams">Club Teams Index</a>
                </li>
            </ul>
          </nav>
     </header>
     <main>
-        <h2>Players Attributes</h2>
-          <form action="/players/<% player._id %>?_method=PUT" method="POST">
-              <input type="text" name="name" value="<%= player.name"> <br>
-              <input type="text"  value="">
-              <input type="text">
+        <h2>Teams Attributes</h2>
+          <form action="/teams/<% team._id %>?_method=PUT" method="POST">
+              <input type="text" name="name" value="<%= team.name"> <br>
+              <input type="submit" value="Update Team">
           </form> 
     </main>
 </body>
