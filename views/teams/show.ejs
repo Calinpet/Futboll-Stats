@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css" class="style">
   <title>Futboll Stats</title>
 </head>
 <body>
@@ -15,23 +22,30 @@
       <table>
           <tr>
               <th>Name</th>   
-              <td><%= team.name%></td>
-              <td><img src="<%= team.img%>" alt="team image" height='100' width='100'></td>
+              <td><%= team.name %></td>
+              <td><img src= "<%= team.image %>" alt="team image" height='100' width='100'></td>
           </tr>
-
           <tr>
-              <th>League</th>
-              <% for (let i = 0; i < team.length; i++) { %>
-              <td><%= team[i]%></td>
-              <% } %>
+            <th>League</th>   
+            <td><%= team.league%></td>
           </tr>
-
           <tr>
-              <th>Stats</th>
-              <% for (let key in team.stats) {%>
-              <td><%= key%>: <%= team.stats[key]%> </td>
-              <%}%>
+            <th>founded</th>   
+            <td><%= team.founded%></td>
           </tr>
+          <tr>
+            <th>Coach</th>   
+            <td><%= team.coach%></td>
+          </tr>
+          <tr>
+            <th>Championships</th>   
+            <td><%= team.championships%></td>
+          </tr>
+          <tr>
+            <th>Losses</th>   
+            <td><%= team.losses%></td>
+        </tr>
+          
          </table>
 
         <section>
