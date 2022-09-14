@@ -7,38 +7,39 @@
   <title>Futboll Stats</title>
 </head>
 <body>
-  <header>
-    <h1>Show Page for <%= team.name %></h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/teams">Futboll Club Team Index</a>
-            </li>
-        </ul>
-    </nav>
-  </header>
-  <main>
+  <div class="headline">
+        <h2 style="color:rgba(9, 9, 9)">Club Team Show Page</h2>
+        <a href="/teams" class="button" style="color:rgb(65, 196, 189)">Back</a>
+    </div>
+    <div class="container">
+      <table>
+          <tr>
+              <th>Name</th>   
+              <td><%= team.name%></td>
+              <td><img src="<%= team.img%>" alt="team image" height='100' width='100'></td>
+          </tr>
 
-    <section>
-        <h2>Teams Attributes:</h2>
-          <ul>
-            <li>Name: <%= team.name %></li>
-          </ul>
-     </section>
-      <!-- use the _method URL param to make the delete btn -->
-      <section>
-         <form action="/teams/<%= team._id %>?_method=DELETE" method="POST">
-         <input type="submit" value="Delete Team" />
-        </form>
-      </section>
-      <!-- create a link -->
-      <section>
-      <a href="/teams/<%= team._id %>/edit">Edit</a>
-      </section>
+          <tr>
+              <th>League</th>
+              <% for (let i = 0; i < team.length; i++) { %>
+              <td><%= team[i]%></td>
+              <% } %>
+          </tr>
 
-    </main>
+          <tr>
+              <th>Stats</th>
+              <% for (let key in team.stats) {%>
+              <td><%= key%>: <%= team.stats[key]%> </td>
+              <%}%>
+          </tr>
+         </table>
+
+        <section>
+              <form action="/teams/<%= team._id %>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete Team" />
+           </form>
+        </section>
+       </div>
+    </main> 
   </body>
 </html>

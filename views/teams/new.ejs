@@ -7,23 +7,52 @@
   <title>Futboll-Stats App</title>
 </head>
 <body>
-  <header>
-    <h1>Create a new Team</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/team">Club Teams Index</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <form action="/players" method="POST">
-        <input type="text" name="name" />
-        <input type="submit" value="Create Team" />
+    </form> 
+    <div class="headline">
+        <h1 style="color:rgb(105, 54, 54)">Create a new team</h1>
+    </div>
+    <form action="/teams" method="POST">
+                <label for="name">Club Name</label>
+                <input class="nName" type="text" name="name" placeholder="club name">
+                <label for="type">League</label>
+                <input class="nType" type="text" name="type" placeholder="league name">
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th> Stats</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" placeholder="Enter League" name="league"></td>
+               </tr>
+                <tr>
+                    <td><input type="file" placeholder="enter image" name="image"></td>
+                </tr>
+                <tr>
+                     <td><input type="number" placeholder="Year founded" name="founded"></td>
+                </tr>
+    
+                <tr>
+                     <td><input type="text" placeholder="Coach name" name="coach"></td>
+                </tr>
+    
+                <tr>
+                     <td><input type="text" placeholder="Championships" name="championships"></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="number" placeholder="Enter season wins" name="wins"></td>
+              </tr> 
+              <tr>
+                    <td><input type="number" placeholder="Enter season losses" name="losses"></td>
+            </tr>
+            </tbody>
+        </table>
+        <input style="background-color:rgb(65, 196, 189)" type="submit" value="Add">
+        <a href="/teams" class="button" style="color:rgb(65, 196, 189)">Back</a>
     </form>
 </main>
 </body>

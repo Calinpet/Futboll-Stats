@@ -2,7 +2,6 @@ const express =require ('express');
 const router = express.Router();
 const Team = require('../models/teams.js');
 
-
 //INDEX
 
 router.get('/', (req,res)=>{
@@ -20,6 +19,7 @@ router.get('/new', (req, res)=>{
 })
 
 //DELETE
+
 router.delete('/:id', (req, res)=>{
   Team.findByIdAndRemove(req.params.id, ()=>{
       res.redirect('/teams');

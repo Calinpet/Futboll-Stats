@@ -1,12 +1,16 @@
-// //Schema for Teams
+// //Schema for Team
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const teamSchema = new Schema({
   name: String,
-  rank: Number,
+  image: String,
   league: String,
-  players:[]
+  founded: Number,
+  coach: String,
+  championships: Number, 
+  wins: Number,
+  losses: Number
 });
 
 const Team = mongoose.model('Team', teamSchema);

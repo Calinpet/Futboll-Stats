@@ -4,6 +4,10 @@ const app = express();
 const teamsController = require('./controllers/teams.js');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
+// const cors = require('cors')
+// const axios = require("axios");
+
+
 
 require('dotenv').config();
 
@@ -14,6 +18,8 @@ mongoose.connect(process.env.DATABASE_URL);
 app.use(express.urlencoded({extended: false }));
 app.use(methodOverride('_method'));
 app.use('/teams', teamsController);
+// app.use(cors());
+
 
 
 app.get('/', (req, res)=>{

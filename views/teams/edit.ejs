@@ -7,7 +7,69 @@
   <title>Futboll-Stats</title>
 </head>
 <body>
-    <header>
+   <div class="headline">
+      <h2 style="color:rgb(9, 9, 9)"> Edit Team</h2>
+</div>
+
+<section>
+    <a href="/teams/<%= teams._id %>/index">Edit</a>
+    </section> 
+
+<form action="/teams/<% team._id %>?_method=PUT" method="POST">
+  <div class="row">
+    <div class="six columns">
+        <label for="name">League</label>
+        <input class="u-full-width" type="text" name="name" placeholder="enter league name" value="<%= name%>">
+    </div> 
+</div>
+
+<div class="row">
+  <div class="six columns">
+      <label for="type">Club Name</label>
+      <input class="u-full-width" type="text" name="type" placeholder="enter club name" value="<%= type%>">
+  </div>
+</div>
+<!-- STATS  -->
+<table>
+<thead>
+    <tr><th> Stats</th></tr>
+</thead>
+<tbody>
+   <tr>
+      <td><input type="text" placeholder="Enter League" name="league" value="<%= league%>"></td>
+  </tr>
+    <tr>
+        <td><input type="file" placeholder="Enter image" name="image" value="<%= image%>"></td>
+    </tr>
+
+    <tr>
+        <td><input type="number" placeholder="Year founded" name="founded" value="<%= founded%>"></td>
+    </tr>
+
+    <tr>
+        <td><input type="text" placeholder="Enter coach name" name="coach" value="<%= coach%>"></td>
+    </tr>
+
+    <tr>
+        <td><input type="text" placeholder="Championships" name="championships" value="<%= championships%>"></td>
+    </tr>
+
+    <tr>
+        <td><input type="number" placeholder="Enter season wins" name="wins" value="<%= wins%>"></td>
+    </tr>
+
+    <tr>
+        <td><input type="number" placeholder="Enter season losses" name="speed" value="<%= speed%>"></td>
+    </tr>
+ </tbody>
+</table>
+<input style="background-color:rgb(65, 196, 189);" type="submit" value="Add">
+<a href="/teams" class="button" style="color:rgb(65, 196, 189)">Back</a>
+</form>
+</body>
+</html>
+
+  <!-- <header>
        <h1>Edit <%= team.name %>'s Info</h1>
          <nav>
             <ul>
@@ -26,6 +88,4 @@
               <input type="text" name="name" value="<%= team.name"> <br>
               <input type="submit" value="Update Team">
           </form> 
-    </main>
-</body>
-</html>
+    </main> --
