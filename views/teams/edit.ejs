@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   <title>Futboll-Stats</title>
 </head>
 <body>
@@ -11,81 +17,59 @@
       <h2 style="color:rgb(9, 9, 9)"> Edit Team</h2>
 </div>
 
-<section>
-    <a href="/teams/<%= teams._id %>/index">Edit</a>
-    </section> 
-
 <form action="/teams/<% team._id %>?_method=PUT" method="POST">
   <div class="row">
     <div class="six columns">
-        <label for="name">League</label>
-        <input class="u-full-width" type="text" name="name" placeholder="enter league name" value="<%= name%>">
+        <label for="league">League</label>
+        <input class="u-full-width" type="text" name="league" placeholder="Enter league name" value="<%= team.league%>">
     </div> 
 </div>
-
 <div class="row">
-  <div class="six columns">
-      <label for="type">Club Name</label>
-      <input class="u-full-width" type="text" name="type" placeholder="enter club name" value="<%= type%>">
-  </div>
+   <div class="six columns">
+       <label for="type">Club Name</label>
+       <input class="u-full-width" type="text" name="type" placeholder="Enter club name" value="<%= team.type%>">
+   </div>
+
 </div>
 <!-- STATS  -->
 <table>
 <thead>
-    <tr><th> Stats</th></tr>
-</thead>
-<tbody>
-   <tr>
-      <td><input type="text" placeholder="Enter League" name="league" value="<%= league%>"></td>
-  </tr>
-    <tr>
-        <td><input type="file" placeholder="Enter image" name="image" value="<%= image%>"></td>
-    </tr>
+    <tr><th><h1> Stats</h1></th></tr>
+   </thead>
+      <tbody>
+            <tr>
+               <td><input type="text" placeholder="Enter League" name="league" value="<%= team.league%>"></td>
+             </tr>
+          <tr>
+             <td><input type="text" placeholder="Enter image link" name="image" value="<%= team.image%>"></td>
+          </tr>
 
-    <tr>
-        <td><input type="number" placeholder="Year founded" name="founded" value="<%= founded%>"></td>
-    </tr>
+         <tr>
+            <td><input type="number" placeholder="Year founded" name="founded" value="<%= team.founded%>"></td>
+          </tr>
 
-    <tr>
-        <td><input type="text" placeholder="Enter coach name" name="coach" value="<%= coach%>"></td>
-    </tr>
+         <tr>
+             <td><input type="text" placeholder="Enter coach name" name="coach" value="<%= team.coach%>"></td>
+          </tr>
 
-    <tr>
-        <td><input type="text" placeholder="Championships" name="championships" value="<%= championships%>"></td>
-    </tr>
+         <tr>
+             <td><input type="text" placeholder="Championships" name="championships" value="<%= team.championships%>"></td>
+         </tr>
 
-    <tr>
-        <td><input type="number" placeholder="Enter season wins" name="wins" value="<%= wins%>"></td>
-    </tr>
+         <tr>
+            <td><input type="number" placeholder="Enter season wins" name="wins" value="<%= team.wins%>"></td>
+         </tr>
 
-    <tr>
-        <td><input type="number" placeholder="Enter season losses" name="speed" value="<%= speed%>"></td>
-    </tr>
- </tbody>
-</table>
-<input style="background-color:rgb(65, 196, 189);" type="submit" value="Add">
-<a href="/teams" class="button" style="color:rgb(65, 196, 189)">Back</a>
-</form>
-</body>
+         <tr>
+             <td><input type="number" placeholder="Enter season losses" name="losses" value="<%= team.  losses%>"></td>
+          </tr>
+      </tbody>
+         </table>
+          <input style="background-color:rgb(65, 196, 189);" type="submit" value="Add edited team">
+         <a href="/teams" class="button" style="color:rgb(65, 196, 189)">Back</a>
+      </form>
+   </body>
 </html>
 
-  <!-- <header>
-       <h1>Edit <%= team.name %>'s Info</h1>
-         <nav>
-            <ul>
-               <li>
-                  <a href="/">Home</a>
-               </li>
-               <li>
-                  <a href="/teams">Club Teams Index</a>
-               </li>
-           </ul>
-         </nav>
-    </header>
-    <main>
-        <h2>Teams Attributes</h2>
-          <form action="/teams/<% team._id %>?_method=PUT" method="POST">
-              <input type="text" name="name" value="<%= team.name"> <br>
-              <input type="submit" value="Update Team">
-          </form> 
-    </main> --
+  
+    
