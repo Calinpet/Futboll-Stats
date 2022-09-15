@@ -13,62 +13,59 @@
   <title>Futboll-Stats</title>
 </head>
 <body>
+   <header>
    <div class="headline">
       <h2 style="color:rgb(9, 9, 9)"> Edit Team</h2>
-</div>
-
-<form action="/teams/<% team._id %>?_method=PUT" method="POST">
-  <div class="row">
-    <div class="six columns">
-        <label for="league">League</label>
-        <input class="u-full-width" type="text" name="league" placeholder="Enter league name" value="<%= team.league%>">
-    </div> 
-</div>
-<div class="row">
-   <div class="six columns">
-       <label for="type">Club Name</label>
-       <input class="u-full-width" type="text" name="type" placeholder="Enter club name" value="<%= team.type%>">
    </div>
-
-</div>
+   </header>
+   <form action="/teams/<%= team._id %>?_method=PUT" method="POST">
+      <div class="row">
+          <div class="six columns">
+             <label for="league">League</label>
+               <input class="u-full-width" type="text" name="league" placeholder="Enter league name" value="<%= team.league%>">
+          </div> 
+      </div>
+      <div class="row">
+         <div class="six columns">
+             <label for="type">Club Name</label>
+               <input class="u-full-width" type="text" name="type" placeholder="Enter club name" value="<%= team.type%>">
+         </div>   
+      </div>
 <!-- STATS  -->
-<table>
-<thead>
-    <tr><th><h1> Stats</h1></th></tr>
-   </thead>
-      <tbody>
-            <tr>
-               <td><input type="text" placeholder="Enter League" name="league" value="<%= team.league%>"></td>
-             </tr>
-          <tr>
-             <td><input type="text" placeholder="Enter image link" name="image" value="<%= team.image%>"></td>
-          </tr>
+   <table>
+      <thead>
+         <tr><th><h1> Stats </h1></th></tr>
+            </thead>
+               <tbody>
+                  <tr>
+                    <td><input type="text" placeholder="Enter League" name="league" value="<%= team.league%>"></td>
+                    </tr>
+                     <tr>
+                        <td><input type="text" placeholder="Enter image link" name="image" value="<%= team.image%>"></td>
+                     </tr>
+                      <tr>
+                         <td><input type="number" placeholder="Year founded" name="founded" value="<%= team.founded%>"></td>
+                        </tr>
+                      <tr>
+                       <td><input type="text" placeholder="Enter coach name" name="coach" value="<%= team.coach%>"></td>
+                         </tr>
+                        <tr>
+                        <td><input type="text" placeholder="Championships" name="championships" value="<%= team.championships%>"></td>
+                        </tr>
 
-         <tr>
-            <td><input type="number" placeholder="Year founded" name="founded" value="<%= team.founded%>"></td>
-          </tr>
+                        <tr>
+                          <td><input type="number" placeholder="Enter season wins" name="wins" value="<%= team.wins%>"></td>
+                        </tr>
 
-         <tr>
-             <td><input type="text" placeholder="Enter coach name" name="coach" value="<%= team.coach%>"></td>
-          </tr>
-
-         <tr>
-             <td><input type="text" placeholder="Championships" name="championships" value="<%= team.championships%>"></td>
-         </tr>
-
-         <tr>
-            <td><input type="number" placeholder="Enter season wins" name="wins" value="<%= team.wins%>"></td>
-         </tr>
-
-         <tr>
-             <td><input type="number" placeholder="Enter season losses" name="losses" value="<%= team.  losses%>"></td>
-          </tr>
-      </tbody>
-         </table>
-          <input style="background-color:rgb(65, 196, 189);" type="submit" value="Add edited team">
-         <a href="/teams" class="button" style="color:rgb(65, 196, 189)">Back</a>
-      </form>
-   </body>
+                        <tr>
+                          <td><input type="number" placeholder="Enter season losses" name="losses" value="<%= team.  losses%>"></td>
+                      </tr>
+                   </tbody>
+                </table>
+                  <input style="background-color:rgb(65, 196, 189);" type="submit" value="Add edited team">
+                     <a href="/teams" class="button" style="color:rgb(65, 196, 189)">Back</a>
+                </form>
+         </body>
 </html>
 
   
