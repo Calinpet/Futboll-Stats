@@ -1,6 +1,20 @@
-body {
-  background-color: rgb(44, 126, 198);
-  padding: 0;
-  padding-top: 05;
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
+
+/* body {
+  background: url("./Images/Premier-League-Logo-2007.jpeg");
+  background-color: rgba(0,0,0, 0.5);
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+} */
+/* Medium screens */
+
+
+
+
+
+ 
