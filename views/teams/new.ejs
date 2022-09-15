@@ -5,28 +5,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/public/css/new.css" class="style">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   <title>Futboll-Stats App</title>
 </head>
 <body>
-    </form> 
-    <div class="headline">
-        <h1 style="color:rgb(105, 54, 54)">Create a new team</h1>
-    </div>
+    <nav> 
+    <header>
+        <div class="headline">
+            <h1 style="color:rgb(105, 54, 54)">Create a new team</h1>
+        </div>
+    </header> 
+</nav>  
+</form> 
     <form action="/teams" method="POST">
-                <label for="name">Club Name</label>
+                <label for="name"><h4>Club Name</h4></label>
                 <input class="nName" type="text" name="name" placeholder="club name">
-                <label for="type">League</label>
+                <label for="type"><h4>League</h4></label>
                 <input class="nType" type="text" name="type" placeholder="league name">
             </div>
         </div>
         <table>
             <thead>
                 <tr>
-                    <th> Stats</th>
+                    <th><h4> Stats </h4></th>
                 </tr>
             </thead>
             <tbody>
@@ -55,18 +61,18 @@
                     <td><input type="number" placeholder="Enter season losses" name="losses"></td>
             </tr>
             </tbody>
-        </table>
+         </table>
         <input style="background-color:rgb(65, 196, 189)" type="submit" value="Add">
-        <a href="/teams" class="button" style="color:rgb(65, 196, 189)">Back</a>
-    </form>
-</main>
-</body>
-</html>
+            <a href="/teams" class="button" style="color:rgb(65, 196, 189)">Back</a>
+         </form>
+        </main>
+        
+     </body>
+     
+    </html>
+
 <style>
     body {
-  background-color: rgb(180, 120, 178);
-  padding: 0;
-  padding-top: 5%;
-  margin: 0;
+  background-color: rgb(240, 236, 246);
 }
 </style>
