@@ -13,33 +13,33 @@
   <link rel="stylesheet" href="style.css" class="style"> 
   <title>Futboll-Stats App</title>
 </head>
+
 <body>
   <!-- Header -->
-     <header>
-          <h1>Futboll Club Teams</h1>
-            <nav>
-              <ul>
-                <li>
-                  <a href="/">Home</a>
-                </li>
-                <li>
-                  <a href="/teams/new">Create a new Team</a>
-                </li>
-              </ul>
-            </nav>
-     </header>
-<main>
-  <h2>List of Futboll Club Teams</h2>
-  <ul>
-      <% for(let i = 0; i < teams.length; i++){ %>
+  <nav>
+    <ul>
       <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/teams/new">Create Team</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- <div class="container"> -->
+  <main>
+    <h2>List of Futboll Club Teams</h2>
+      <ul>
+       <% for(let i = 0; i < teams.length; i++){ %>
+        <li>
           <a href="/teams/<%= teams[i]._id %>"><%= teams[i].name %></a>
         </li>
         <section>
-        <a href="/teams/<%= teams[i]._id %>/edit">Edit</a>
-      </section>
+          <a href="/teams/<%= teams[i]._id %>/edit">Edit</a>
+        </section>
       <% } %>
-  </ul>
-</main>
-</body>
+     </ul>
+    </main>
+   <!-- </div> -->
+  </body>
 </html>
