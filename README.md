@@ -1,14 +1,18 @@
 # Futboll-Stats
-
+A webb app for English football fans! Here you can find stats about your favourite team. You can also add, remove or edit your favourite team. 
 
 ## Technologies
-
-
-### Wireframes
-
+- Express.js
+- Node.js
+- JavaScript
+- MongoDB
+- Mongoose
+- EJS
+- Postman
+- CSS3
 
 ### Planing
-
+Trello
 
 ## Features
 
