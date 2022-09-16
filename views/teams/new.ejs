@@ -21,58 +21,83 @@
         </div>
     </header> 
 </nav>  
-</form> 
-    <form action="/teams" method="POST">
+<div class="container">
+     <!-- <div class="striped">  -->
+        <form action="/teams" method="POST">
                 <label for="name"><h4>Club Name</h4></label>
                 <input class="nName" type="text" name="name" placeholder="club name">
                 <label for="type"><h4>League</h4></label>
                 <input class="nType" type="text" name="type" placeholder="league name">
-            </div>
-        </div>
         <table>
-            <thead>
-                <tr>
+                <thead>
+                 <tr>
                     <th><h4> Stats </h4></th>
-                </tr>
-            </thead>
+                  </tr>
+                 </thead>
             <tbody>
                 <tr>
-                    <td><input type="text" placeholder="Enter League" name="league"></td>
-               </tr>
-                <tr>
-                    <td><input type="text" placeholder="enter image link" name="image"></td>
+                    <td>League<input type="text" placeholder="Enter League" name="league"></td>
                 </tr>
                 <tr>
-                     <td><input type="number" placeholder="Year founded" name="founded"></td>
+                    <td>Logo<input type="text" placeholder="enter image link" name="image"></td>
                 </tr>
-    
                 <tr>
-                     <td><input type="text" placeholder="Coach name" name="coach"></td>
+                     <td>Year Founded<input type="number" placeholder="Year founded" name="founded"></td>
                 </tr>
     
                 <tr>
-                     <td><input type="text" placeholder="Championships" name="championships"></td>
+                     <td>Coach<input type="text" placeholder="Coach name" name="coach"></td>
                 </tr>
     
                 <tr>
-                    <td><input type="number" placeholder="Enter season wins" name="wins"></td>
+                     <td>Championships<input type="text" placeholder="Championships" name="championships"></td>
+                </tr>
+    
+                <tr>
+                    <td>Wins<input type="number" placeholder="Enter season wins" name="wins"></td>
               </tr> 
               <tr>
-                    <td><input type="number" placeholder="Enter season losses" name="losses"></td>
-            </tr>
+                    <td>Losses<input type="number" placeholder="Enter season losses" name="losses"></td>
+                </tr>
             </tbody>
-         </table>
-        <input style="background-color:rgb(65, 196, 189)" type="submit" value="Add">
+
+            </table>
+        </div>
+        <input style="background-color:rgb(65, 196, 189)" type="submit" value="Add" >
             <a href="/teams" class="button" style="color:rgb(65, 196, 189)">Back</a>
          </form>
+        </div>
         </main>
-        
      </body>
-     
+
     </html>
 
 <style>
-    body {
-  background-color: rgb(240, 236, 246);
+
+body {
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("../Images/81Dttr25ZiL._SL1500_.jpg");
+    background-color: rgba(0,0,0, 0.5);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+ }
+
+ h1{
+    text-align: center;
+    text-shadow: 2px 2px rgb(85, 62, 158);
+ }
+
+ 
+.container{
+    border: 1px solid #999;
+    padding: 0.5rem;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray
 }
+
+.button{
+    font-size: 16px;
+}
+
 </style>

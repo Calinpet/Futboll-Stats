@@ -12,6 +12,8 @@ h1{
 text-align: center;
 }
 
+
+
 @media all and (max-width: 800px) {
   .nav {
     /* When on medium sized screens, we center it by evenly distributing empty space around items */

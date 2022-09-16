@@ -11,28 +11,31 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   
   <link rel="stylesheet" href="style.css" class="style">
+
   <title>Futboll Stats</title>
+
 </head>
+
 <body>
   <header>
     <div class="headline">
         <h2 style="color:rgba(9, 9, 9)">Club Team Show Page</h2>
-        <a href="/teams" class="button" style="color:rgb(65, 196, 189)">Back</a>
+        <a href="/teams/" class="button" style="color:rgb(65, 196, 189)">Back</a>
     </div>
   </header>
     <div class="container">
       <table>
-          <tr>
-              <th>Name</th>   
-              <td><%= team.name %></td>
-              <td><img src= "<%= team.image %>" alt="team image" height='100' width='100'></td>
-          </tr>
+        <tr>
+          <th>Name</th>   
+          <td><%= team.name %></td>
+          <td><img src= "<%= team.image %>" alt="team image" height='100' width='100'></td>
+      </tr>
           <tr>
             <th>League</th>   
             <td><%= team.league%></td>
           </tr>
           <tr>
-            <th>founded</th>   
+            <th>Founded</th>   
             <td><%= team.founded%></td>
           </tr>
           <tr>
@@ -59,3 +62,19 @@
     </main> 
   </body>
 </html>
+
+<style>
+
+body {
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("../Images/PL30-board-ball-and-Trophy-at-PL-launch-scaled.jpeg");
+    background-color: rgba(0,0,0, 0.5);
+    background-size:cover;
+    background-repeat: no-repeat;
+ }
+
+ h2 {
+    text-align: center;
+    text-shadow: 2px 2px rgb(85, 62, 158);
+ }
+
+</style>

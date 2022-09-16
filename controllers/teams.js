@@ -29,7 +29,14 @@ router.delete('/:id', (req, res)=>{
 //UPDATE
 
 router.put('/:id', (req, res)=>{
-  Team.findByIdAndUpdate(req.params.id, req.body, ()=>{
+  Team.findByIdAndUpdate(
+    req.params.id, 
+    req.body,
+    {
+      new: true,
+    }, 
+    (error, updatedTeam)=>{
+    console.log(updatedTeam)
     res.redirect('/teams')
   });
 });
@@ -56,6 +63,7 @@ router.get('/:id/edit', (req, res)=>{
  
 router.get('/:id', (req, res) => {
   Team.findById(req.params.id, (err, foundTeam) => {
+    console.log('this the found team: ',foundTeam)
       res.render('teams/show.ejs', {
         team: foundTeam
     });
