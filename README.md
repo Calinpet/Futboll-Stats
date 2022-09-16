@@ -29,7 +29,7 @@ Home page:
 ![Screenshot](./public/Images/ShowPage.png)
 
 ### Getting Started
-![Click here]() to see the working app
+![Click here](https://github.com/Calinpet/Futboll-Stats) to see the working app
 
 ## Future Enhancements
 - Implementing a better style and design for a higher quality UI/UX.
