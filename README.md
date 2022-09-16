@@ -13,6 +13,9 @@ A webb app for English football fans! Here you can find stats about your favouri
 
 ## Screenshots 
 
+### Planing
+![Screenshot](./public/Images/Trello%20Planing.png)
+
 ## Features
 - User can search through a database to see stats about Football Teams in English Premier League
 - User can Add, Edit and Delete teams.
