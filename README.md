@@ -16,7 +16,7 @@ A webb app for English football fans! Here you can find stats about your favouri
 
 ### Planing
 Trello
-![Screenshot] (public/Images/Trello Planing.png)
+![Screenshot](/Users/calin/Desktop/seirTitan/unit2/homework/Futboll-Stats/public/Images/Trello Planing.png)
 
 ## Features
 - User can search through a database to see stats about Football Teams in English Premier League
