@@ -21,6 +21,7 @@ Trello
 
 
 ### Images of Working App
+Home page:
 ![Click here]()
 
 ### Getting Started
