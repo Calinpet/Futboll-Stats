@@ -9,16 +9,15 @@ A webb app for English football fans! Here you can find stats about your favouri
 - Mongoose
 - EJS
 - Postman
-- CSS3
-<<<<<<< HEAD
+
 
 ### Wireframes
 ![Screenshot]
 
 ### Planing
 Trello
-![Screenshot]()
-=======
+![Screenshot](./public/Images/Trello%20Planing)
+
 
 ### Planing
 Trello
