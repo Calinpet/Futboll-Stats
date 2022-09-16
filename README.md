@@ -10,12 +10,8 @@ A webb app for English football fans! Here you can find stats about your favouri
 - EJS
 - Postman
 - CSS3
+
 ## Screenshots 
-
-
-### Planing
-Trello
-
 
 ## Features
 - User can search through a database to see stats about Football Teams in English Premier League
@@ -28,8 +24,9 @@ Trello
 Home page:
 ![Screenshot](./public/Images/Home%20Page.png)
 
-![Screenshot]
+![Screenshot](./public/Images/IndexPage.png)
 
+![Screenshot](./public/Images/ShowPage.png)
 
 ### Getting Started
 ![Click here]() to see the working app
