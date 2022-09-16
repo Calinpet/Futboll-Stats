@@ -16,7 +16,7 @@ A webb app for English football fans! Here you can find stats about your favouri
 
 ### Planing
 Trello
-![Screenshot](./public/Images/Trello%20Planing)
+![Screenshot](./public/Images/Trello%20Planing.png)
 
 
 ### Planing
