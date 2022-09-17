@@ -10,6 +10,8 @@ A webb app for English football fans! Here you can find stats about your favouri
 - EJS
 - Postman
 - CSS3
+- Materialize
+- HTML5
 
 ## Screenshots 
 
@@ -21,7 +23,7 @@ A webb app for English football fans! Here you can find stats about your favouri
 - User can Add, Edit and Delete teams.
 
 ## Design
-- Design elements implemented using CSS3
+- Design elements implemented using CSS3, HTML5, Materialize
 
 ### Images of Working App
 Home page:
